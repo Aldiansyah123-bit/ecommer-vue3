@@ -58,7 +58,7 @@ const cart = {
             const user  = JSON.parse(localStorage.getItem('user'))
 
             //set axios header dengan type Authorization + Bearer token
-            Api.defaults.headers.common['Authorization'] = "Bearer" +token
+            Api.defaults.headers.common['Authorization'] = "Bearer " +token
             
             //send data cart ke server
             Api.post('/cart', {
@@ -98,7 +98,7 @@ const cart = {
             const token = localStorage.getItem('token')
 
             //set axios header dengan type Authorization + Bearer token
-            Api.defaults.headers.common['Authorization'] = "Bearer" +token
+            Api.defaults.headers.common['Authorization'] = "Bearer " +token
 
             //get dat cart
             Api.get('/cart')
@@ -118,7 +118,7 @@ const cart = {
             const token = localStorage.getItem('token')
 
             //set axios header dengan type Authorization + Bearer token
-            Api.defaults.headers.common['Authorization'] = "Bearer" +token
+            Api.defaults.headers.common['Authorization'] = "Bearer " +token
 
             //get dat cart
             Api.get('/cart/total')
@@ -138,7 +138,7 @@ const cart = {
             const token = localStorage.getItem('token')
 
             //set axios header dengan type Authorization + Bearer token
-            Api.defaults.headers.common['Authorization'] = "Bearer" +token
+            Api.defaults.headers.common['Authorization'] = "Bearer " +token
 
             Api.get('/cart/totalWeight')
             .then(response => {
@@ -157,7 +157,7 @@ const cart = {
             const token = localStorage.getItem('token')
 
             //set axios header dengan type Authorization + Bearer token
-            Api.defaults.headers.common['Authorization'] = "Bearer" +token
+            Api.defaults.headers.common['Authorization'] = "Bearer " +token
 
             Api.post('/cart/remove', {
                 cart_id: cart_id

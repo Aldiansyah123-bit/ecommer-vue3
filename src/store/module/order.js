@@ -47,7 +47,7 @@ const order = {
             //define variable token
             const token = localStorage.getItem('token')
 
-            Api.defaults.headers.common['Authorization'] = "Bearer" +token
+            Api.defaults.headers.common['Authorization'] = "Bearer " +token
             Api.get('/order')
             .then(response => {
                 
@@ -64,7 +64,7 @@ const order = {
             //define variable token
             const token = localStorage.getItem('token')
 
-            Api.defaults.headers.common['Authorization'] = "Bearer" +token
+            Api.defaults.headers.common['Authorization'] = "Bearer " +token
             Api.get(`order/${snap_token}`)
             .then(response => {
                 
