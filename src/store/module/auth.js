@@ -100,7 +100,7 @@ const auth = {
             //ambil data token dari localStorage
             const token = localStorage.getItem('token')
 
-            Api.defaults.headers.common['Authorization'] = "Bearer " +token
+            Api.defaults.headers.common['Authorization'] = "Bearer " + token
             Api.get('/user')
             .then(response => {
                 
