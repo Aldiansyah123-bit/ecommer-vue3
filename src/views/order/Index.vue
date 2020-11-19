@@ -70,7 +70,7 @@
             const orders = computed(() => {
 
                 //panggil getter dengan nama "getOrder" di module "order" vuex 
-                store.getters['order/getOrder']
+                return store.getters['order/getOrder']
 
             })
 
