@@ -177,13 +177,13 @@ import { useRoute, useRouter } from 'vue-router'
                 window.snap.pay(snap_token, {
 
                     onSuccess: function () {
-                        route.push({name: 'detail_order', params:{snap_token: snap_token}})  
+                        router.push({name: 'detail_order', params:{snap_token: snap_token}})  
                     },
                     onPending: function () {
-                        route.push({name: 'detail_order', params:{snap_token: snap_token}})
+                        router.push({name: 'detail_order', params:{snap_token: snap_token}})
                     },
                     onError: function () {
-                        route.push({name: 'detail_order', params:{snap_token: snap_token}})  
+                        router.push({name: 'detail_order', params:{snap_token: snap_token}})  
                     }
                 })
 
